@@ -1,0 +1,17 @@
+{
+	"name" :"Extension fighting",
+	"version" :"1.0",
+	"description" :"fight notification",
+	"permissions": ["storage", "notifications"],
+	"browser_action": {
+	"default_icon": "assets/icons/default.png",
+      	"default_popup": "default.html"
+	},
+	"icons": {
+		"16": "assets/icons/default.png"
+	},
+	"background": {
+		"scripts": ["background.js"]
+	},
+	"manifest_version": 2
+}

@@ -1,0 +1,97 @@
+body, html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 600px;
+  min-width: 450px;
+}
+
+.core {
+  padding: 20px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.fight-list {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 11px;
+}
+
+.fight-list:first-child {
+  padding-top: 0px;
+}
+
+.name-link {
+  width: 58%;
+}
+.icon img {
+  width: 70%;
+}
+
+.icon {
+  width: 6%;
+}
+
+.button-menu button {
+  background: none;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 0.5em 1.2em;
+}
+
+.loader {
+  width: 50pt;
+  height: 50pt;
+  border-radius: 100%;
+  border: #6767fa 4pt solid;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 50%;
+  background-color: transparent;
+  animation: loading 1s infinite;
+}
+
+.date-fight {
+  line-height: 0;
+  width: 81px;
+  text-align: center;
+  margin-top: -3px;
+}
+.days {
+  font-size: 17px;
+}
+.hours {
+  font-size: 13px;
+}
+
+@keyframes loading {
+  0% {
+    width: 50pt;
+    height: 50pt;
+    margin-top: 0;
+  }
+  25% {
+    height: 4pt;
+    margin-top: 23pt;
+  }
+  50% {
+    width: 4pt;
+  }
+  75% {
+    width: 50pt;
+  }
+  100% {
+    width: 50pt;
+    height: 50pt;
+    margin-top: 0;
+  }
+}
