@@ -5,7 +5,6 @@ function save_options() {
       notificationMMA: mma,
       notificationBoxing:  boxing
     }, () => {
-      // Update status to let user know options were saved.
       var status = document.getElementById('status');
       status.textContent = 'Options saved.';
       setTimeout(() => {
@@ -15,7 +14,6 @@ function save_options() {
   }
 
   function restore_options() {
-    // Use default value color = 'red' and likesColor = true.
     chrome.storage.sync.get([
         'notificationMMA', 'notificationBoxing'], (items) => {
       document.getElementById('boxing-notification').checked = items.notificationBoxing;
