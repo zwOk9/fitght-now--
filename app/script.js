@@ -106,13 +106,13 @@ function buildList({ results }) {
 			seconds = pad( Math.floor( secondsLeft % 60 ) )
 			let countDownInner = ''
 			if (days > 0) {
-				countDownInner = `${days} : ${hours} : ${minutes} : ${seconds}`
+				countDownInner = `${days} j ${hours} h ${minutes} m ${seconds}`
 			} else if (days <= 0 && hours > 0 && (minutes > 0)) {
-				countDownInner = `${hours} : ${minutes} : ${seconds}`
+				countDownInner = `${hours} h ${minutes} m ${seconds} s`
 			}  else if (days <= 0 && hours <= 0 && (minutes > 0)) {
-				countDownInner = `${minutes} : ${seconds}`
+				countDownInner = `${minutes} m ${seconds} s`
 			} else if (days <= 0 && hours <= 0 && minutes <= 0 && (seconds > 0)) {
-				countDownInner = `${seconds}`
+				countDownInner = `${seconds} s`
 			} else {
 				countDownInner = `now`
 			}

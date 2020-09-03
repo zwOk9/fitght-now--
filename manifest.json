@@ -3,12 +3,19 @@
 	"version" :"1.0",
 	"description" :"fight notification",
 	"permissions": ["storage", "notifications"],
+	"options_page": "options.html",
 	"browser_action": {
-	"default_icon": "assets/icons/default.png",
-      	"default_popup": "default.html"
+	"default_icon": "assets/icons/favicon-128x128.png"
 	},
 	"icons": {
-		"16": "assets/icons/default.png"
+		"128": "assets/icons/favicon-128x128.png",
+		"64": "assets/icons/favicon-64x64.png",
+		"48": "assets/icons/favicon-48x48.png",
+		"32": "assets/icons/favicon-32x32.png",
+		"24": "assets/icons/favicon-24x24.png",
+		"16": "assets/icons/favicon-16x16.png"
+
+
 	},
 	"background": {
 		"scripts": ["background.js"]
